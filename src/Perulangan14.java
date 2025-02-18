@@ -29,5 +29,6 @@ public class Perulangan14 {
         }
 
         sc.close();
+        
     }
 }
