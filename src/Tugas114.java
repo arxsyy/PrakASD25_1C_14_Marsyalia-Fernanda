@@ -40,4 +40,4 @@ public class Tugas114 {
             System.out.println("Kode plat tidak ditemukan!");
         }
     }
-}
+} 
