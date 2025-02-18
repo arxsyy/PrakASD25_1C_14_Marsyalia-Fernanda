@@ -27,4 +27,4 @@ public class Fungsi14 {
         System.out.println("Alocasia: " + (stockBunga[3][2] - 0) + " (berkurang 0)");
         System.out.println("Mawar: " + (stockBunga[3][3] - 5) + " (berkurang 5)");
     }
-}
+} 
