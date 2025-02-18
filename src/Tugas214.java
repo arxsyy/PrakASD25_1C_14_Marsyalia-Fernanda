@@ -48,4 +48,4 @@ public class Tugas214 {
         double keliling = 12 * sisi;
         System.out.println("Keliling kubus = " + keliling);
     }
-}
+} 
