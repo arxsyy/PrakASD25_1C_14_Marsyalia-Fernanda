@@ -24,6 +24,12 @@ public class MahasiswaDemo14 {
         for (int i = 0; i < 3; i++) {
             arrayOfMahasiswa[i].cetakInfo();
         }
+
+        Mahasiswa[] myArrayOfMahasiswa = new Mahasiswa[3];
+        myArrayOfMahasiswa[0].nim = "244107060033";
+        myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+        myArrayOfMahasiswa[0].kelas = "SIB-1E";
+        myArrayOfMahasiswa[0].ipk = (float) 3.75;
         
         sc.close();
     }
