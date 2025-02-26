@@ -21,6 +21,7 @@ public class MatakuliahDemo14 {
             System.out.println("----------------------------------");
 
             arrayOfMatakuliah14[i] = new Matakuliah14(kode, nama, sks, jumlahJam);
+            arrayOfMatakuliah14[i].tambahData(kode, nama, sks, jumlahJam);
         }
 
         for (int i = 0; i < 3; i++) {
@@ -31,5 +32,6 @@ public class MatakuliahDemo14 {
             System.out.println("Jumlah Jam : " + arrayOfMatakuliah14[i].jumlahJam);
             System.out.println("----------------------------------");
         }
+        
     }
 }
