@@ -4,7 +4,7 @@ public class Mahasiswa14 {
     String nim;
     String nama;
     String kelas;
-    double ipk;
+    double ipk; 
 
     Mahasiswa14() {}
 
