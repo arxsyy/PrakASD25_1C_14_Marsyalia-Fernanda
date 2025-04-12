@@ -15,8 +15,10 @@ public class MahasiswaBerprestasi14 {
 
     void tampil() {
         for (Mahasiswa14 m:listMhs){
-            m.tampilInformasi();
-            System.out.println("-------------------------------");
+            if (m != null) {
+                m.tampilInformasi();
+                System.out.println("-------------------------------");
+            }
         }
     }
 
