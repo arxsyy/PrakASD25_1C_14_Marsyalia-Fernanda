@@ -67,6 +67,7 @@ public class DosenDemo14 {
                 case 6:
                     System.out.print("Masukkan Usia Dosen yang dicari: ");
                     int usiaCari = sc.nextInt();
+                    dataDosen.sortingASC();
                     int posisiBinary = dataDosen.pencarianDataBinary(usiaCari);
                     if (posisiBinary != -1) {
                         System.out.println("Dosen ditemukan di indeks: " + posisiBinary);

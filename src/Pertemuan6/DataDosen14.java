@@ -47,12 +47,21 @@ public class DataDosen14 {
     }
 
     int pencarianDataSequential(String nama) {
+        int count = 0;
+        int index = -1;
+
         for (int i = 0; i < idx; i++) {
             if (dataDosen[i] != null && dataDosen[i].nama.equalsIgnoreCase(nama)) {
-                return i;
+                count++;
+                index = i;
             }
         }
-        return -1;
+
+        if (count > 1) {
+            System.out.println("Peringatan: Ditemukan lebih dari satu dosen dengan nama '" + nama + "'.");
+        }
+
+        return index;
     }
 
     int pencarianDataBinary(int usia) {
