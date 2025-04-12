@@ -45,4 +45,31 @@ public class DataDosen14 {
             }
         }
     }
+
+    int pencarianDataSequential(String nama) {
+        for (int i = 0; i < idx; i++) {
+            if (dataDosen[i] != null && dataDosen[i].nama.equalsIgnoreCase(nama)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    int pencarianDataBinary(int usia) {
+        sortingASC();
+        int left = 0;
+        int right = idx - 1;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (dataDosen[mid].usia == usia) {
+                return mid;
+            } else if (dataDosen[mid].usia < usia) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return -1;
+    }
 }
