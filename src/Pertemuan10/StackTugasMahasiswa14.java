@@ -78,4 +78,8 @@ public class StackTugasMahasiswa14 {
             return null;
         }
     }
+
+    public int hitung14() {
+        return top+1;
+    }
 }
