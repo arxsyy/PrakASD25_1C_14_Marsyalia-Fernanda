@@ -29,7 +29,7 @@ public class Queue14 {
             return false;
         }
     }
-
+    
     public void peek14() {
         if (!isEmpty14()) {
             System.out.println("Elemen terdepan : " + data[front]);
@@ -45,7 +45,7 @@ public class Queue14 {
             int i = front;
             while (i != rear) {
                 System.out.println(data[i] + " ");
-                i = (i + 1) % max;
+                i = (i+1) % max;
             }
             System.out.println(data[i] + " ");
             System.out.println("Jumlah elemen = " + size);
@@ -64,7 +64,8 @@ public class Queue14 {
 
     public void Enqueue14(int dt) {
         if (isFull14()) {
-            System.out.println("Queue sudah penuh");
+            System.out.println("Queue overflow");
+            System.exit(1);
         } else {
             if (isEmpty14()) {
                 front = rear = 0;
@@ -78,12 +79,13 @@ public class Queue14 {
             data[rear] = dt;
             size++;
         }
-    }
+    }    
 
     public int Dequeue14() {
         int dt = 0;
         if (isEmpty14()) {
-            System.out.println("Queue masih kosong");
+            System.out.println("Queue underflow");
+            System.exit(1);
         } else {
             dt = data[front];
             size--;
