@@ -92,4 +92,14 @@ public class AntrianLayanan14 {
         return mhs;
     }
 
+    public void lihatTerbelakang14() {
+        if (isEmpty14()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.print("Mahasiswa terbelakang: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData14();
+        }
+    }
+
 }
